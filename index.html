@@ -1,0 +1,339 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Harley Katz">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Harley Katz</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="http://threejs.org/build/three.min.js"></script>
+    
+    <style>
+        div.background {
+            background: url(klematis.jpg) repeat;
+            border: 2px solid black;
+        }
+    
+    div.transbox {
+        margin: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+        filter: alpha(opacity=60); /* For IE8 and earlier */
+    }
+    
+    div.transbox p {
+        margin: 5%;
+        font-weight: bold;
+        color: #000000;
+    }
+    </style>
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#primary-menu">
+
+    <div class="preloader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+    <!--Mainmenu-area-->
+    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
+        <div class="container">
+            <!--Logo-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand logo">
+                    <h2>Harley Katz</h2>
+                </a>
+            </div>
+            <!--Logo/-->
+            <nav class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#feature-page">About Me</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Mainmenu-area/-->
+
+
+
+    <!--Header-area-->
+    <header id="home-page">
+        <div id="canvas">
+        </div>
+        <div id="notes">Harley Katz<div id="notes1"><p>Creative Computing Specialist.</p></div></div>
+    </header>
+    <!--Header-area/-->
+    
+    
+    <script>
+        
+        var container, stats;
+        var camera, scene, renderer, particles, geometry, materials = [], parameters, i, h, color, sprite, size;
+        var mouseX = 0, mouseY = 0;
+        var windowHalfX = canvas.clientWidth;
+        var windowHalfY = canvas.clientHeight;
+        init();
+        animate();
+        function init() {
+            container = document.getElementById( 'canvas' );
+            document.body.appendChild( container );
+            camera = new THREE.PerspectiveCamera( 75, canvas.clientWidth / canvas.clientHeight, 1, 2000 );
+            camera.position.z = 1000;
+            scene = new THREE.Scene();
+            scene.fog = new THREE.FogExp2( 0x000000, 0.0008 );
+            geometry = new THREE.Geometry();
+            var textureLoader = new THREE.TextureLoader();
+            var sprite1 = textureLoader.load( "images/test.jpg" );
+            var sprite2 = textureLoader.load( "images/test1.jpg" );
+            var sprite3 = textureLoader.load( "images/test2.jpg" );
+            var sprite4 = textureLoader.load( "images/test.jpg" );
+            var sprite5 = textureLoader.load( "images/test.jpg" );
+            for ( i = 0; i < 10000; i ++ ) {
+                var vertex = new THREE.Vector3();
+                vertex.x = Math.random() * 2000 - 1000;
+                vertex.y = Math.random() * 2000 - 1000;
+                vertex.z = Math.random() * 2000 - 1000;
+                geometry.vertices.push( vertex );
+            }
+            
+            parameters = [
+                          [ [1.0, 0.2, 0.5], sprite2, 20 ],
+                          [ [0.95, 0.1, 0.5], sprite3, 15 ],
+                          [ [0.90, 0.05, 0.5], sprite1, 10 ],
+                          [ [0.85, 0, 0.5], sprite5, 8 ],
+                          [ [0.80, 0, 0.5], sprite4, 5 ]
+                          ];
+                          for ( i = 0; i < parameters.length; i ++ ) {
+                              color  = parameters[i][0];
+                              sprite = parameters[i][1];
+                              size   = parameters[i][2];
+                              materials[i] = new THREE.PointsMaterial( { size: size, map: sprite, blending: THREE.AdditiveBlending, depthTest: false, transparent : true } );
+                              materials[i].color.setHSL( color[0], color[1], color[2] );
+                              particles = new THREE.Points( geometry, materials[i] );
+                              particles.rotation.x = Math.random() * 6;
+                              particles.rotation.y = Math.random() * 6;
+                              particles.rotation.z = Math.random() * 6;
+                              scene.add( particles );
+                          }
+                          renderer = new THREE.WebGLRenderer();
+                          renderer.setPixelRatio( canvas.devicePixelRatio );
+                          renderer.setSize( canvas.clientWidth, canvas.clientHeight );
+                          container.appendChild( renderer.domElement );
+                          //stats = new Stats();
+                          //container.appendChild( stats.dom );
+                          document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+                          document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+                          document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+                          //
+                          canvas.addEventListener( 'resize', onWindowResize, false );
+        }
+    
+             
+    function onWindowResize() {
+        windowHalfX = canvas.innerWidth / 2;
+        windowHalfY = canvas.innerHeight / 2;
+        camera.aspect = canvas.innerWidth / canvas.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize( canvas.clientWidth, canvas.clientHeight );
+    }
+    function onDocumentMouseMove( event ) {
+        mouseX = event.clientX - windowHalfX;
+        mouseY = event.clientY - windowHalfY;
+    }
+    function onDocumentTouchStart( event ) {
+        if ( event.touches.length === 1 ) {
+            event.preventDefault();
+            mouseX = event.touches[ 0 ].pageX - windowHalfX;
+            mouseY = event.touches[ 0 ].pageY - windowHalfY;
+        }
+    }
+    function onDocumentTouchMove( event ) {
+        if ( event.touches.length === 1 ) {
+            event.preventDefault();
+            mouseX = event.touches[ 0 ].pageX - windowHalfX;
+            mouseY = event.touches[ 0 ].pageY - windowHalfY;
+        }
+    }
+    //
+    function animate() {
+        requestAnimationFrame( animate );
+        render();
+        //stats.update();
+    }
+    function render() {
+        var time = Date.now() * 0.00005;
+        camera.position.x += ( mouseX - camera.position.x ) * 0.05;
+        camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
+        camera.lookAt( scene.position );
+        for ( i = 0; i < scene.children.length; i ++ ) {
+            var object = scene.children[ i ];
+            if ( object instanceof THREE.Points ) {
+                object.rotation.y = time * ( i < 4 ? i + 1 : - ( i + 1 ) );
+            }
+        }
+        for ( i = 0; i < materials.length; i ++ ) {
+            color = parameters[i][0];
+            h = ( 360 * ( color[0] + time ) % 360 ) / 360;
+            materials[i].color.setHSL( h, color[1], color[2] );
+        }
+        renderer.render( scene, camera );
+    }
+    </script>
+
+    <section class="gray-bg section-padding" id="feature-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>Hey, I'm Harley!</h2>
+                        <p>I'm inspired by innovation and I provide creative solutions to any problem at hand.  I am currently based at the University of Oxford as the Beecroft Fellow and Nicholas Kurti Junior Fellow at the Department of Physics and Brasenose College.  If you're trying to disrupt the world with tech, I may be able to help.  Feel free to give me a shout as I'm always up for a chat over coffee to hear what others are thinking about.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/Fp1_small.png" alt="">
+                        </div>
+                        <h3>Computational Astrophysics</h3>
+                        <p>Ever wondered what the Universe looked like right after the Big Bang?  I spend most of my time using some of the largest supercomputers in the world to figure this out.  Check out my <a href="https://arxiv.org/find/all/1/all:+AND+harley+katz/0/1/0/all/0/1">work</a> on the formation of the first stars, galaxies, and black holes using cosmological radiation hydrodynamics simulations.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/nerve-cell.jpg" alt="">
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>[<i>insert default buzzword</i>]  Some of my work includes animating 3D avatars using real-time computer vision, biomedical datamining with NLP, and disease prediction with neural networks.  Have a look at my <a href="https://devpost.com/harleyk">Devpost</a> for my two winning projects at Disrupt London.  I am still looking for a vertical that these types of techniques can't disrupt.'</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/IMG_1124_small.jpg" alt="">
+                        </div>
+                        <h3>Off The Grid</h3>
+                        <p>When I'm not logged in, I'm probably travelling and lighting up Instagram, or chilling with friends. I'm an avid skier, runner, and cyclist, and at 5’8” have even dunked a basketball.  I can make a mean eggplant parmigiana, and can occasionally be seen DJing a party.  I find that spontaneity always keeps things interesting!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section-padding overlay client-area overlay" id="photos">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-12">
+                    <div class="clients">
+                        <div class="item">
+                            <img src="images/IMG_0619.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_0755.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_0891.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_0909.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_0910.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_0987.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_0990.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_1057.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_1064.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_1124.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_1127.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_1211.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_1235.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_1236.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_1330.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_1379.JPG" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/IMG_1432.JPG" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Vendor-JS-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/scrollUp.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>
