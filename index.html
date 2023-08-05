@@ -1,339 +1,401 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+<html lang="en">
 
-<head>
+  <head>
+
     <meta charset="utf-8">
-    <meta name="author" content="Harley Katz">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>Harley Katz</title>
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
-    <!-- Plugin-CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Main-Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="js/three.min.js"></script>
-    
-    <style>
-        div.background {
-            background: url(klematis.jpg) repeat;
-            border: 2px solid black;
-        }
-    
-    div.transbox {
-        margin: 30px;
-        background-color: #ffffff;
-        border: 1px solid black;
-        opacity: 0.6;
-        filter: alpha(opacity=60); /* For IE8 and earlier */
-    }
-    
-    div.transbox p {
-        margin: 5%;
-        font-weight: bold;
-        color: #000000;
-    }
-    </style>
+    <meta name="author" content="">
 
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
+    <title>Resume - Start Bootstrap Theme</title>
 
-<body data-spy="scroll" data-target="#primary-menu">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <div class="preloader">
-        <div class="sk-folding-cube">
-            <div class="sk-cube1 sk-cube"></div>
-            <div class="sk-cube2 sk-cube"></div>
-            <div class="sk-cube4 sk-cube"></div>
-            <div class="sk-cube3 sk-cube"></div>
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Current Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Harley
+            <span class="text-primary">Katz</span>
+          </h1>
+          <div class="subheading mb-5">Beecroft Fellow · Co-founder of Probably Genetic · Forbes 30 Under 30 · PhD Astrophysics ·
+            <a href="mailto:harley.katz@physics.ox.ac.uk">harley.katz@physics.ox.ac.uk</a>
+          </div>
+          <p class="mb-5">In short, I tackle hard problems with large computers.</p>
         </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Current Projects</h2>
+          <p>Feel free to reach out for collaboration on any of these topics.<p>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">MEGATRON</h3>
+              <div class="subheading mb-3">Transforming our understanding of the ISM and CGM with RAMSES-RTZ</div>
+              <p>
+                Awarded >50M CPUh on the UK's DiRAC facilities, MEGATRON is the first cosmological simulation to self-consistently model the
+                non-equilibrium chemistry and heating/cooling processes in the interstellar medium for nearly 100 atoms, ions, and molecules
+                coupled to on-the-fly radiation transfer. Complete with state-of-the-art modules for galaxy formation and stellar feedback, 
+                including the formation and enrichment from Population III stars, MEGATRON models the formation of a Milky Way-like galaxy from 
+                the earliest epochs until cosmic noon.
+              </p>
+            </div>
+            <!-- <div class="resume-date text-md-right">
+              <span class="text-primary">March 2013 - Present</span>
+            </div> -->
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">SPHINX<sup>20</sup> Public Data Release</h3>
+              <div class="subheading mb-3">Apples-to-apples comparisons between high-redshift simulations and JWST observations</div>
+              <p>
+                An ambitious project to completely forward-model the spectra and photometry from the largest full-box cosmological radiation 
+                hydrodynamcis simulation of reionization with a resolved ISM.
+              </p>
+            </div>
+            <!-- <div class="resume-date text-md-right">
+              <span class="text-primary">December 2011 - March 2013</span>
+            </div> -->
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Exascale Gravity</h3>
+              <div class="subheading mb-3">A new gravity algorithm without all-to-all communication</div>
+              <p>
+                The next generation of exascale codes require us to rethink even our most basic algorithms. This project is in its infant stages 
+                and uses a purely-local method to solve gravity in a cosmological setting.
+              </p>
+            </div>
+            <!-- <div class="resume-date text-md-right">
+              <span class="text-primary">July 2010 - December 2011</span>
+            </div> -->
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of Cambridge</h3>
+              <div class="subheading mb-3">PhD in Astrophysics</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">October 2013 - September 2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of Maryland, College Park</h3>
+              <div class="subheading mb-3">Double Degree, BS in Physics, BS in Astronomy</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2009 - May 2013</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="publications">
+        <div class="my-auto">
+          <h2 class="mb-5">Astrophysics Publications</h2>
+
+          <!-- ADS Formatting: <li><i class="fa-li fa fa-circle"></I>\n%l, '%T', %q, %V, %p (%Y).\n</li>\n -->
+
+          <div class="subheading mb-3">First-Author</div>
+          <ul class="fa-ul mb-0">
+            <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Kimm, T., Ellis, R. S., Devriendt, J., & Slyz, A., 'The challenges of identifying Population III stars in the early Universe', MNRAS, 524, 351 (2023).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Saxena, A., Cameron, A. J., Carniani, S., Bunker, A. J., Arribas, S., Bhatawdekar, R., Bowler, R. A. A., Boyett, K. N. K., Cresci, G., Curtis-Lake, E., D'Eugenio, F., Kumari, N., Looser, T. J., Maiolino, R., Übler, H., Willott, C., & Witstok, J., 'First insights into the ISM at z > 8 with JWST: possible physical implications of a high [O III] λ4363/[O III] λ5007', MNRAS, 518, 592 (2023).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Saxena, A., Rosdahl, J., Kimm, T., Blaizot, J., Garel, T., Michel-Dansac, L., Haehnelt, M., Ellis, R. S., Pentericci, L., Devriendt, J., & Slyz, A., 'Two modes of LyC escape from bursty star formation: implications for [C II] deficits and the sources of reionization', MNRAS, 518, 270 (2023).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Liu, S., Kimm, T., Rey, M. P., Andersson, E. P., Cameron, A. J., Rodriguez-Montero, F., Agertz, O., Devriendt, J., & Slyz, A., 'PRISM: A Non-Equilibrium, Multiphase Interstellar Medium Model for Radiation Hydrodynamics Simulations of Galaxies', arXiv, arXiv:2211.04626 (2022).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Garel, T., Rosdahl, J., Mauerhofer, V., Kimm, T., Blaizot, J., Michel-Dansac, L., Devriendt, J., Slyz, A., & Haehnelt, M., 'Mg II in the JWST era: a probe of Lyman continuum escape?', MNRAS, 515, 4265 (2022).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, 'RAMSES-RTZ: non-equilibrium metal chemistry and cooling coupled to on-the-fly radiation hydrodynamics', MNRAS, 512, 348 (2022).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Rosdahl, J., Kimm, T., Garel, T., Blaizot, J., Haehnelt, M. G., Michel-Dansac, L., Martin-Alvarez, S., Devriendt, J., Slyz, A., Teyssier, R., Ocvirk, P., Laporte, N., & Ellis, R., 'The nature of high [O III]<SUB>88 μ m</SUB>/[C II]<SUB>158 μm</SUB> galaxies in the epoch of reionization: Low carbon abundance and a top-heavy IMF?', MNRAS, 510, 5603 (2022).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Martin-Alvarez, S., Rosdahl, J., Kimm, T., Blaizot, J., Haehnelt, M. G., Michel-Dansac, L., Garel, T., Oñorbe, J., Devriendt, J., Slyz, A., Attia, O., & Teyssier, R., 'Introducing SPHINX-MHD: the impact of primordial magnetic fields on the first galaxies, reionization, and the global 21-cm signal', MNRAS, 507, 1254 (2021).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Ďurovčíková, D., Kimm, T., Rosdahl, J., Blaizot, J., Haehnelt, M. G., Devriendt, J., Slyz, A., Ellis, R., & Laporte, N., 'New methods for identifying Lyman continuum leakers and reionization-epoch analogues', MNRAS, 498, 164 (2020).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Ramsoy, M., Rosdahl, J., Kimm, T., Blaizot, J., Haehnelt, M. G., Michel-Dansac, L., Garel, T., Laigle, C., Devriendt, J., & Slyz, A., 'How to quench a dwarf galaxy: The impact of inhomogeneous reionization on dwarf galaxies and cosmic filaments', MNRAS, 494, 2200 (2020).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Galligan, T. P., Kimm, T., Rosdahl, J., Haehnelt, M. G., Blaizot, J., Devriendt, J., Slyz, A., Laporte, N., & Ellis, R., 'Probing cosmic dawn with emission lines: predicting infrared and nebular line emission for ALMA and JWST', MNRAS, 487, 5902 (2019).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Laporte, N., Ellis, R. S., Devriendt, J., & Slyz, A., 'Probing cosmic dawn: modelling the assembly history, SEDs, and dust content of selected z ∼ 9 galaxies', MNRAS, 484, 4054 (2019).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Martin-Alvarez, S., Devriendt, J., Slyz, A., & Kimm, T., 'Magnetogenesis at Cosmic Dawn: tracing the origins of cosmic magnetic fields', MNRAS, 484, 2620 (2019).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Desmond, H., McGaugh, S., & Lelli, F., 'The tight empirical relation between dark matter halo mass and flat rotation velocity for late-type galaxies', MNRAS, 483, L98 (2019).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Kimm, T., Haehnelt, M. G., Sijacki, D., Rosdahl, J., & Blaizot, J., 'Tracing the sources of reionization in cosmological radiation hydrodynamics simulations', MNRAS, 483, 1029 (2019).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Desmond, H., Lelli, F., McGaugh, S., Di Cintio, A., Brook, C., & Schombert, J., 'Stellar feedback and the energy budget of late-type Galaxies: missing baryons and core creation', MNRAS, 480, 4287 (2018).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Kimm, T., Haehnelt, M., Sijacki, D., Rosdahl, J., & Blaizot, J., 'A Census of the LyC photons that form the UV background during reionization', MNRAS, 478, 4986 (2018).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Kimm, T., Sijacki, D., & Haehnelt, M. G., 'Interpreting ALMA observations of the ISM during the epoch of reionization', MNRAS, 468, 4831 (2017).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Lelli, F., McGaugh, S. S., Di Cintio, A., Brook, C. B., & Schombert, J. M., 'Testing feedback-modified dark matter haloes with galaxy rotation curves: estimation of halo parameters and consistency with ΛCDM scaling relations', MNRAS, 466, 1648 (2017).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Sijacki, D., & Haehnelt, M. G., 'Seeding high-redshift QSOs by collisional runaway in primordial star clusters', MNRAS, 451, 2352 (2015).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, Sijacki, D., & Haehnelt, M., 'Seeding High Redshift QSOs by Collisional Runaway in Primordial Star Clusters', IAUGA, 29, 2230030 (2015).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, & Ricotti, M., 'Clues on the missing sources of reionization from self-consistent modelling of Milky Way and dwarf galaxy globular clusters', MNRAS, 444, 2377 (2014).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, McGaugh, S. S., Sellwood, J. A., & de Blok, W. J. G., 'The formation of spiral galaxies: adiabatic compression with Young's algorithm and the relation of dark matter haloes to their primordial antecedents', MNRAS, 439, 1897 (2014).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, & Ricotti, M., 'Two epochs of globular cluster formation from deep field luminosity functions: implications for reionization and the Milky Way satellites', MNRAS, 432, 3250 (2013).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              <b>Katz, H.</b>, McGaugh, S., Teuben, P., & Angus, G. W., 'Galaxy Cluster Bulk Flows and Collision Velocities in QUMOND', ApJ, 772, 10 (2013).
+              </li>              
+          </ul>
+          <div><br></div>
+          <div class="subheading mb-3">Latter-Author</div>
+          <ul class="fa-ul mb-0">
+            <li><i class="fa-li fa fa-circle"></I>
+              Blaizot, J., Garel, T., Verhamme, A., <b>Katz, H.</b>, Kimm, T., Michel-Dansac, L., Mitchell, P. D., Rosdahl, J., & Trebitsch, M., 'Simulating the diversity of shapes of the Lyman-α line', MNRAS, 523, 3749 (2023).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Cameron, A. J., <b>Katz, H.</b>, Rey, M. P., & Saxena, A., 'Nitrogen enhancements 440 Myr after the big bang: supersolar N/O, a tidal disruption event, or a dense stellar cluster in GN-z11?', MNRAS, 523, 3516 (2023).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Cameron, A. J., <b>Katz, H.</b>, & Rey, M. P., 'A novel approach to correcting T<SUB>e</SUB>-based mass-metallicity relations', MNRAS, 522, L89 (2023).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Steinhardt, C. L., Sneppen, A., Clausen, T., <b>Katz, H.</b>, Rey, M. P., & Stahlschmidt, J., 'The Highest-Redshift Balmer Breaks as a Test of ΛCDM', arXiv, arXiv:2305.15459 (2023).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Choustikov, N., <b>Katz, H.</b>, Saxena, A., Cameron, A. J., Devriendt, J., Slyz, A., Rosdahl, J., Blaizot, J., & Michel-Dansac, L., 'The Physics of Indirect Estimators of Lyman Continuum Escape and their Application to High-Redshift JWST Galaxies', arXiv, arXiv:2304.08526 (2023).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Witten, C., Laporte, N., Martin-Alvarez, S., Sijacki, D., Yuan, Y., Haehnelt, M. G., Baker, W., Dunlop, J. S., Ellis, R. S., Grogin, N., Illingworth, G., <b>Katz, H.</b>, Koekemoer, A. M., Magee, D., Maiolino, R., McClymont, W., Pérez-González, P. G., Puskas, D., Roberts-Borsani, G., Santini, P., & Simmonds, C., 'Deciphering Lyman-α Emission Deep into the Epoch of Reionisation', arXiv, arXiv:2303.16225 (2023).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Rey, M. P., <b>Katz, H. B.</b>, Cameron, A. J., Devriendt, J., & Slyz, A., 'Boosting galactic outflows with enhanced resolution', arXiv, arXiv:2302.08521 (2023).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Witten, C. E. C., Laporte, N., & <b>Katz, H.</b>, 'Evidence for a Low Lyman Continuum Escape Fraction in Three Massive, Ultraviolet-bright Galaxies at z > 7', ApJ, 944, 61 (2023).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Saxena, A., Cryer, E., Ellis, R. S., Pentericci, L., Calabrò, A., Mascia, S., Saldana-Lopez, A., Schaerer, D., <b>Katz, H.</b>, Llerena, M., & Amorín, R., 'Strong C IV emission from star-forming galaxies: a case for high Lyman continuum photon escape', MNRAS, 517, 1098 (2022).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Rosdahl, J., Blaizot, J., <b>Katz, H.</b>, Kimm, T., Garel, T., Haehnelt, M., Keating, L. C., Martin-Alvarez, S., Michel-Dansac, L., & Ocvirk, P., 'LyC escape from SPHINX galaxies in the Epoch of Reionization', MNRAS, 515, 2386 (2022).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Han, D., Kimm, T., <b>Katz, H.</b>, Devriendt, J., & Slyz, A., 'Impact of Radiation Feedback on the Formation of Globular Cluster Candidates during Cloud-Cloud Collisions', ApJ, 935, 53 (2022).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Martin-Alvarez, S., Devriendt, J., Slyz, A., Sijacki, D., Richardson, M. L. A., & <b>Katz, H.</b>, 'Towards convergence of turbulent dynamo amplification in cosmological simulations of galaxies', MNRAS, 513, 3326 (2022).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Maji, M., Verhamme, A., Rosdahl, J., Garel, T., Blaizot, J., Mauerhofer, V., Pittavino, M., Victoria Feser, M.-P., Chuniaud, M., Kimm, T., <b>Katz, H.</b>, & Haehnelt, M., 'Predicting Lyman-continuum emission of galaxies using their physical and Lyman-α emission properties', A&A, 663, A66 (2022).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Lee, J., Kimm, T., Blaizot, J., <b>Katz, H.</b>, Lee, W., Sheen, Y.-K., Devriendt, J., & Slyz, A., 'Simulating Jellyfish Galaxies: A Case Study for a Gas-rich Dwarf Galaxy', ApJ, 928, 144 (2022).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Trebitsch, M., Dubois, Y., Volonteri, M., Pfister, H., Cadiou, C., <b>Katz, H.</b>, Rosdahl, J., Kimm, T., Pichon, C., Beckmann, R. S., Devriendt, J., & Slyz, A., 'The OBELISK simulation: Galaxies contribute more than AGN to H I reionization of protoclusters', A&A, 653, A154 (2021).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Martin-Alvarez, S., <b>Katz, H.</b>, Sijacki, D., Devriendt, J., & Slyz, A., 'Unravelling the origin of magnetic fields in galaxies', MNRAS, 504, 2517 (2021).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Attia, O., Teyssier, R., <b>Katz, H.</b>, Kimm, T., Martin-Alvarez, S., Ocvirk, P., & Rosdahl, J., 'Cosmological magnetogenesis: the Biermann battery during the Epoch of reionization', MNRAS, 504, 2346 (2021).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Garel, T., Blaizot, J., Rosdahl, J., Michel-Dansac, L., Haehnelt, M. G., <b>Katz, H.</b>, Kimm, T., & Verhamme, A., 'Ly α as a tracer of cosmic reionization in the SPHINX radiation-hydrodynamics cosmological simulation', MNRAS, 504, 1902 (2021).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Lee, J., Kimm, T., <b>Katz, H.</b>, Rosdahl, J., Devriendt, J., & Slyz, A., 'Dual Effects of Ram Pressure on Star Formation in Multiphase Disk Galaxies with Strong Stellar Feedback', ApJ, 905, 31 (2020).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Ďurovčíková, D., <b>Katz, H.</b>, Bosman, S. E. I., Davies, F. B., Devriendt, J., & Slyz, A., 'Reionization history constraints from neural network based predictions of high-redshift quasar continua', MNRAS, 493, 4256 (2020).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Laporte, N., <b>Katz, H.</b>, Ellis, R. S., Lagache, G., Bauer, F. E., Boone, F., Inoue, A. K., Hashimoto, T., Matsuo, H., Mawatari, K., & Tamura, Y., 'The absence of [C II] 158 μm emission in spectroscopically confirmed galaxies at z > 8', MNRAS, 487, L81 (2019).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Kimm, T., Blaizot, J., Garel, T., Michel-Dansac, L., <b>Katz, H.</b>, Rosdahl, J., Verhamme, A., & Haehnelt, M., 'Understanding the escape of LyC and Lyα photons from turbulent clouds', MNRAS, 486, 2215 (2019).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Lelli, F., McGaugh, S. S., Schombert, J. M., Desmond, H., & <b>Katz, H.</b>, 'The baryonic Tully-Fisher relation for different velocity definitions and implications for galaxy angular momentum', MNRAS, 484, 3267 (2019).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Desmond, H., <b>Katz, H.</b>, Lelli, F., & McGaugh, S., 'Uncorrelated velocity and size residuals across galaxy rotation curves', MNRAS, 484, 239 (2019).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Galligan, T. P., <b>Katz, H.</b>, Kimm, T., Rosdahl, J., Blaizot, J., Devriendt, J., & Slyz, A., 'deepCool: Fast and Accurate Estimation of Cooling Rates in Irradiated Gas with Artificial Neural Networks', arXiv, arXiv:1901.01264 (2019).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Rosdahl, J., <b>Katz, H.</b>, Blaizot, J., Kimm, T., Michel-Dansac, L., Garel, T., Haehnelt, M., Ocvirk, P., & Teyssier, R., 'The SPHINX cosmological simulations of the first billion years: the impact of binary stars on reionization', MNRAS, 479, 994 (2018).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Kimm, T., Haehnelt, M., Blaizot, J., <b>Katz, H.</b>, Michel-Dansac, L., Garel, T., Rosdahl, J., & Teyssier, R., 'Impact of Lyman alpha pressure on metal-poor dwarf galaxies', MNRAS, 475, 4617 (2018).
+              </li>
+              
+              <li><i class="fa-li fa fa-circle"></I>
+              Kimm, T., <b>Katz, H.</b>, Haehnelt, M., Rosdahl, J., Devriendt, J., & Slyz, A., 'Feedback-regulated star formation and escape of LyC photons from mini-haloes during reionization', MNRAS, 466, 4826 (2017).
+              </li>              
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+        </div>
+      </section> -->
+
     </div>
-    <!--Mainmenu-area-->
-    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
-        <div class="container">
-            <!--Logo-->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="#" class="navbar-brand logo">
-                    <h2>Harley Katz</h2>
-                </a>
-            </div>
-            <!--Logo/-->
-            <nav class="collapse navbar-collapse" id="primary-menu">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#feature-page">About Me</a></li>
-                    <li><a href="#photos">Photos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <!--Mainmenu-area/-->
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!--Header-area-->
-    <header id="home-page">
-        <div id="canvas">
-        </div>
-        <div id="notes">Harley Katz<div id="notes1"><p>Creative Computing Specialist.</p></div></div>
-    </header>
-    <!--Header-area/-->
-    
-    
-    <script>
-        
-        var container, stats;
-        var camera, scene, renderer, particles, geometry, materials = [], parameters, i, h, color, sprite, size;
-        var mouseX = 0, mouseY = 0;
-        var windowHalfX = canvas.clientWidth;
-        var windowHalfY = canvas.clientHeight;
-        init();
-        animate();
-        function init() {
-            container = document.getElementById( 'canvas' );
-            document.body.appendChild( container );
-            camera = new THREE.PerspectiveCamera( 75, canvas.clientWidth / canvas.clientHeight, 1, 2000 );
-            camera.position.z = 1000;
-            scene = new THREE.Scene();
-            scene.fog = new THREE.FogExp2( 0x000000, 0.0008 );
-            geometry = new THREE.Geometry();
-            var textureLoader = new THREE.TextureLoader();
-            var sprite1 = textureLoader.load( "images/test.jpg" );
-            var sprite2 = textureLoader.load( "images/test1.jpg" );
-            var sprite3 = textureLoader.load( "images/test2.jpg" );
-            var sprite4 = textureLoader.load( "images/test.jpg" );
-            var sprite5 = textureLoader.load( "images/test.jpg" );
-            for ( i = 0; i < 10000; i ++ ) {
-                var vertex = new THREE.Vector3();
-                vertex.x = Math.random() * 2000 - 1000;
-                vertex.y = Math.random() * 2000 - 1000;
-                vertex.z = Math.random() * 2000 - 1000;
-                geometry.vertices.push( vertex );
-            }
-            
-            parameters = [
-                          [ [1.0, 0.2, 0.5], sprite2, 20 ],
-                          [ [0.95, 0.1, 0.5], sprite3, 15 ],
-                          [ [0.90, 0.05, 0.5], sprite1, 10 ],
-                          [ [0.85, 0, 0.5], sprite5, 8 ],
-                          [ [0.80, 0, 0.5], sprite4, 5 ]
-                          ];
-                          for ( i = 0; i < parameters.length; i ++ ) {
-                              color  = parameters[i][0];
-                              sprite = parameters[i][1];
-                              size   = parameters[i][2];
-                              materials[i] = new THREE.PointsMaterial( { size: size, map: sprite, blending: THREE.AdditiveBlending, depthTest: false, transparent : true } );
-                              materials[i].color.setHSL( color[0], color[1], color[2] );
-                              particles = new THREE.Points( geometry, materials[i] );
-                              particles.rotation.x = Math.random() * 6;
-                              particles.rotation.y = Math.random() * 6;
-                              particles.rotation.z = Math.random() * 6;
-                              scene.add( particles );
-                          }
-                          renderer = new THREE.WebGLRenderer();
-                          renderer.setPixelRatio( canvas.devicePixelRatio );
-                          renderer.setSize( canvas.clientWidth, canvas.clientHeight );
-                          container.appendChild( renderer.domElement );
-                          //stats = new Stats();
-                          //container.appendChild( stats.dom );
-                          document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-                          document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-                          document.addEventListener( 'touchmove', onDocumentTouchMove, false );
-                          //
-                          canvas.addEventListener( 'resize', onWindowResize, false );
-        }
-    
-             
-    function onWindowResize() {
-        windowHalfX = canvas.innerWidth / 2;
-        windowHalfY = canvas.innerHeight / 2;
-        camera.aspect = canvas.innerWidth / canvas.innerHeight;
-        camera.updateProjectionMatrix();
-        renderer.setSize( canvas.clientWidth, canvas.clientHeight );
-    }
-    function onDocumentMouseMove( event ) {
-        mouseX = event.clientX - windowHalfX;
-        mouseY = event.clientY - windowHalfY;
-    }
-    function onDocumentTouchStart( event ) {
-        if ( event.touches.length === 1 ) {
-            event.preventDefault();
-            mouseX = event.touches[ 0 ].pageX - windowHalfX;
-            mouseY = event.touches[ 0 ].pageY - windowHalfY;
-        }
-    }
-    function onDocumentTouchMove( event ) {
-        if ( event.touches.length === 1 ) {
-            event.preventDefault();
-            mouseX = event.touches[ 0 ].pageX - windowHalfX;
-            mouseY = event.touches[ 0 ].pageY - windowHalfY;
-        }
-    }
-    //
-    function animate() {
-        requestAnimationFrame( animate );
-        render();
-        //stats.update();
-    }
-    function render() {
-        var time = Date.now() * 0.00005;
-        camera.position.x += ( mouseX - camera.position.x ) * 0.05;
-        camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
-        camera.lookAt( scene.position );
-        for ( i = 0; i < scene.children.length; i ++ ) {
-            var object = scene.children[ i ];
-            if ( object instanceof THREE.Points ) {
-                object.rotation.y = time * ( i < 4 ? i + 1 : - ( i + 1 ) );
-            }
-        }
-        for ( i = 0; i < materials.length; i ++ ) {
-            color = parameters[i][0];
-            h = ( 360 * ( color[0] + time ) % 360 ) / 360;
-            materials[i].color.setHSL( h, color[1], color[2] );
-        }
-        renderer.render( scene, camera );
-    }
-    </script>
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
 
-    <section class="gray-bg section-padding" id="feature-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2>Hey, I'm Harley!</h2>
-                        <p>I'm inspired by innovation and I provide creative solutions to any problem at hand.  I am currently based at the University of Oxford as the Beecroft Fellow and Nicholas Kurti Junior Fellow at the Department of Physics and Brasenose College.  If you're trying to disrupt the world with tech, I may be able to help.  Feel free to give me a shout as I'm always up for a chat over coffee to hear what others are thinking about.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/Fp1_small.png" alt="">
-                        </div>
-                        <h3>Computational Astrophysics</h3>
-                        <p>Ever wondered what the Universe looked like right after the Big Bang?  I spend most of my time using some of the largest supercomputers in the world to figure this out.  Check out my <a href="https://arxiv.org/find/all/1/all:+AND+harley+katz/0/1/0/all/0/1">work</a> on the formation of the first stars, galaxies, and black holes using cosmological radiation hydrodynamics simulations.</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/nerve-cell.jpg" alt="">
-                        </div>
-                        <h3>Machine Learning</h3>
-                        <p>[<i>insert default buzzword</i>]  Some of my work includes animating 3D avatars using real-time computer vision, biomedical datamining with NLP, and disease prediction with neural networks.  Have a look at my <a href="https://devpost.com/harleyk">Devpost</a> for my two winning projects at Disrupt London.  I am still looking for a vertical that these types of techniques can't disrupt.'</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/IMG_1124_small.jpg" alt="">
-                        </div>
-                        <h3>Off The Grid</h3>
-                        <p>When I'm not logged in, I'm probably travelling and lighting up Instagram, or chilling with friends. I'm an avid skier, runner, and cyclist, and at 5’8” have even dunked a basketball.  I can make a mean eggplant parmigiana, and can occasionally be seen DJing a party.  I find that spontaneity always keeps things interesting!</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="section-padding overlay client-area overlay" id="photos">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-xs-12">
-                    <div class="clients">
-                        <div class="item">
-                            <img src="images/IMG_0619.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_0755.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_0891.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_0909.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_0910.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_0987.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_0990.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_1057.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_1064.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_1124.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_1127.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_1211.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_1235.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_1236.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_1330.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_1379.JPG" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/IMG_1432.JPG" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Vendor-JS-->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <!--Plugin-JS-->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/contact-form.js"></script>
-    <script src="js/jquery.parallax-1.1.3.js"></script>
-    <script src="js/scrollUp.min.js"></script>
-    <script src="js/magnific-popup.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <!--Main-active-JS-->
-    <script src="js/main.js"></script>
-    
-</body>
+  </body>
 
 </html>
